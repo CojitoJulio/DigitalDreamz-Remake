@@ -13,16 +13,16 @@
         <img src="Logo.png" href="index.html" alt="logo" id="logo">
     </a>
 
-    <div class="container">
+    <div class="container" id="form">
         <h1>Iniciar Sesion</h1>
         <form action="#">
-            <input type="text" placeholder="Usuario">
-            <input type="password" placeholder="Contraseña">
+            <input type="text" placeholder="Usuario" id="username">
+            <input type="password" placeholder="Contraseña" id="password">
             <div class="recuperar">
                 <a href="recuperar.html">Olvidaste la Contraseña?</a>
             </div>
         </form>
-        <button>Iniciar Sesion</button>
+        <button type="submit" onclick = "return checkearInputs();">Iniciar Sesion</button>
         <div class="miembro">
             Aun no tienes Cuenta?
             <a href="register.html">Registrate</a>
@@ -30,5 +30,6 @@
 
     </div>
     
+    <script src="login.js"></script>
 </body>
 </html>

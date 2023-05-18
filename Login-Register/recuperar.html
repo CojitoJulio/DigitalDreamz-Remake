@@ -13,19 +13,19 @@
         <img src="Logo.png" href="index.html" alt="logo" id="logo">
     </a>
 
-    <div class="container-contrasena">
+    <div class="container-contrasena" id="form">
         <h1>Recupera tu Contraseña</h1>
         <h5>Te enviaremos un correo para reestablecer tu contraseña</h5>
         <form action="#">
-            <input type="text" placeholder="Correo">
+            <input type="text" placeholder="Correo" id="email">
             
         </form>
-        <button>Recuperar Contraseña</button>
+        <button type="submit" onclick = "return checkearInputs();">Recuperar Contraseña</button>
         <div class="miembro">
             <a href="login.html">Cancelar</a>
         </div>
 
     </div>
-    
+    <script src="recuperar.js"></script>
 </body>
 </html>
